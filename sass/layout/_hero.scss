@@ -1,0 +1,102 @@
+.hero {
+    padding-top: 77px;
+
+
+&__wrapper {
+
+    text-align: left;
+    background-position: right;
+    background-image:
+        url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: 300px auto;
+
+    @media screen and (min-width: $mob) {
+        background-size: 350px auto;
+    }
+
+    @media screen and (min-width: $tab) {
+        background-size: 480px auto;
+    }
+
+    @media screen and (min-width: $desc) {
+        background-size: 630px auto;
+    }
+}
+
+&__title {
+    @include font(700, 20, 1.2);
+
+    padding-top: 100px;
+    width: 60%;
+
+    @media screen and (min-width: 375px) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: $mob) {
+        font-size: 24px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    @media screen and (min-width: 560px) {
+        padding-top: 105px;
+        padding-bottom: 105px;
+    }
+
+    @media screen and (min-width: 625px) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    @media screen and (min-width: $tab) {
+        font-size: 28px;
+        padding-top: 180px;
+        padding-bottom: 230px;
+    }
+
+    @media screen and (min-width: $desc) {
+        font-size: 32px;
+        padding-top: 230px;
+        padding-bottom: 290px;
+    }
+}
+
+&__quote {
+    @include font(400, 16, 1.5);
+@media screen and (max-width: $mob){
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    @media screen and (min-width: $mob) {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    @media screen and (min-width: $tab) {
+        width: 70%;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: $desc) {
+        width: 50%;
+    }
+}
+}
+.hero__title--ital {
+    font-style: italic;
+}
+
+.hero__title p {
+    @include font(700, 16, 1.2);
+     margin-top: 16px;
+
+    @media screen and (min-width: $tab) {
+        font-size: 20px;
+    }
+}
