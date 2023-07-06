@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/main.min.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__wrapper">
+        <a href="./index.html" class="logo">
+          <svg class="icon">
+            <use href="./img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+
+        <nav>
+            <div class="menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="link current" href="./index.html" data-lang="header1"></a>
+                    </li>
+                    <li class="header__item">
+                        <a class="link" href="./projects.html" data-lang="header2"></a>
+                    </li>
+                    <li class="header__item">
+                        <a class="link" href="./about.html" data-lang="header3"></a>
+                    </li>
+                    <li class="header__item">
+                        <a class="link" href="./contacts.html" data-lang="header4"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sub-menu">
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="contacts-icon">
+                        <use href="./img/sprite.svg#menu"></use>
+                    </svg>
+                </button>
+                
+                <button class="dark-mode-btn">
+                    <svg class="dark-icon">
+                        <use href="./img/sprite.svg#sun"></use>
+                    </svg>
+                    <svg class="dark-icon">
+                        <use href="./img/sprite.svg#moon"></use>
+                    </svg>
+                </button>
+                
+                <select class="header__select" id="lang">
+                    <option
+                        class="header__select--option header__btn"
+                        value="en"
+                        selected
+                        data-btn="en">
+                        EN
+                    </option>
+                    <option
+                        class="header__select--option header__btn"
+                        value="uk"
+                        data-btn="uk">
+                        UA
+                    </option>
+                    <option
+                        class="header__select--option header__btn"
+                        value="ru"
+                        data-btn="ru">
+                        RU
+                    </option>
+                </select>
+            </div>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container hero__wrapper">
+                
+                <div class="hero__title">
+                    <h1 data-lang="hero-1"></h1>
+                    <h1 class="hero__title--ital" data-lang="hero-2"></h1>
+                    <h1 >FrontEnd Developer</h1>
+                    <p data-lang="hero-4"></p>
+                </div>
+            </div>
+            <div class="hero__quote">
+                <p data-lang="hero-5"></p>
+                <p style="margin-left: 75%" data-lang="hero-6"></p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container ">
+                <h2 class="title-2" data-lang="projects"></h2>
+                <div class="projects__img">
+                    <ul id="myslider" class="projects__list list">
+                        <li class="projects__item ">
+                            <img src="./img/portfolio.png" alt="portfolio">
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/wallet.png" alt="wallet">
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/filmoteka.png" alt="filmoteka">
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/phonebook.png" alt="phonebook">
+                        </li>
+                        <li class="projects__item ">
+                            <img src="./img/icecream.png" alt="icecream">
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/barbershop.png" alt="barbershop">
+                        </li>
+                        <li class="projects__item ">
+                            <img src="./img/webstudio.png" alt="webstudio">
+                        </li>
+                    </ul>
+                    
+                    <div class="projects-buttons">
+                        <button id="next-button" type="button" class="projects-btn next">
+                            <svg width="24" height="24">
+                                <use href="./img/sprite.svg#right"></use>
+                            </svg>
+                        </button>
+                        <button id="prev-button" type="button" class="projects-btn prev">
+                            <svg width="24" height="24">
+                                <use href="./img/sprite.svg#left"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="social-links">
+                <li>
+                    <a href="https://github.com/Liubov1102" target="_blank" rel="noreferrer noopener">
+                        <svg class="social-icon">
+                            <use href="./img/sprite.svg#git"><use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/liubov-zadoiko-3b94a3247/"  target="_blank" rel="noreferrer noopener">
+                        <svg class="social-icon">
+                            <use href="./img/sprite.svg#link"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1wbWW_UNfUq3tH3DZ8UV9Ka4vsEx6UZY4/view?usp=sharing" target="_blank" rel="noreferrer noopener">
+                        <svg class="social-icon">
+                            <use href="./img/sprite.svg#telegr"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__text">
+                Copyright © 2023 LZ. Created by Liubov Zadoiko.
+            </p>
+        </div>
+    </footer>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg  class="contacts-icon">
+                    <use href="./img/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            
+            <ul class="mobile-menu">
+                <li class="mobile-menu__item">
+                    <a class="link current" href="./index.html" data-lang="mobile-1"></a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="link" href="./projects.html" data-lang="mobile-2"></a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="link" href="./about.html" data-lang="mobile-3"></a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="link" href="./contacts.html" data-lang="mobile-4"></a>
+                </li>
+            </ul>
+        </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/refs.js"></script>
+    <script src="./js/translation.js"></script>
+    <script src="./js/lang.js"></script>
+    <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>
+
+

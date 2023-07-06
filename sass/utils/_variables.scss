@@ -1,0 +1,16 @@
+:root {
+    --text-color: #212121;
+    --title-text-color: #212121;
+    --page-bg: #CFDBE4;
+    --header-bg: #0000001a;
+    --accent-color: #A35709;
+    --white-color: #ffffff;
+}
+.dark {
+    --page-bg: #282C33;
+    --text-color: #ffffff;
+    --header-bg: #fbf9f94e;
+}
+$mob: 420px;
+$tab: 768px;
+$desc: 1024px;
